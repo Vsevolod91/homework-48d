@@ -1,4 +1,4 @@
---- Task 2 Простые выборки
+                             --- Task 2 Простые выборки
 
 --- "имя контакта" и "город" (contact_name, country) из таблицы customers (только эти две колонки)
 SELECT contact_name, country FROM customers;
@@ -48,7 +48,7 @@ WHERE ship_city LIKE '%burg';
 
 --- Вывести без повторений две колонки (город, страна) для заказов, отправленных в города,
 --- заканчивающиеся на 'burg' (см. таблица orders, колонки ship_city, ship_country)
-SELECT DISTINCT (ship_city, ship_country) FROM orders
+SELECT DISTINCT ship_city, ship_country FROM orders
 WHERE ship_city LIKE '%burg';
 
 --- из таблицы orders идентификатор заказа, идентификатор заказчика, вес и страну отгузки.
